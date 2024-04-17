@@ -75,7 +75,11 @@ int main() {
     while(1) {
 		int input;
 		scanf("%d", &input);
-		if(!input) return;
+		if(!input) {
+            clearStack(&stack);
+            return;
+        }
+
 		switch(input) {
 			case 1:
 				int data;
